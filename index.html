@@ -103,7 +103,78 @@
                 /* background-color: aqua; */
                 max-width: 70vw;
             }
-        
+        @media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .right ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first span {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .first {
+        margin: 40px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .first span {
+        font-size: 28px;
+    }
+
+    .btn, .blue, .green {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .item {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .first span {
+        font-size: 24px;
+    }
+
+    .first {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .right ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .grid {
+        padding: 20px;
+        margin: 10px;
+    }
+}
          
     </style>
 </head>
